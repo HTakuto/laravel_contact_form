@@ -7,7 +7,7 @@
     <title>入力画面</title>
 </head>
 <body>
-    <form action="">
+    <form action="{{url('/confirm')}}">
         @csrf
         <label for="name">名前</label><br>
         <input type="text" name="name" value="{{old('name')}}" id="name"><br>
