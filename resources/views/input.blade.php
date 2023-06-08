@@ -14,9 +14,7 @@
         <label for="email">メールアドレス</label><br>
         <input type="email" name="email" value="{{old('email')}}" id="email"><br>
         <label for="content">問い合わせ内容</label><br>
-        <textarea name="content" id="" cols="30" rows="10" id="content">
-            {{old('content')}}
-        </textarea><br>
+        <textarea name="content" id="" cols="30" rows="10" id="content">{{old('content')}}</textarea><br>
         <input type="submit" value="送信" name="send">
     </form>
 </body>
