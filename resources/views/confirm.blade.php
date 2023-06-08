@@ -7,7 +7,7 @@
     <title>入力画面</title>
 </head>
 <body>
-    <form action="{{url('/complate')}}">
+    <form action="{{url('/complete')}}" method="post">
         @csrf
         名前<br>
         {{$name}}<br>
