@@ -18,7 +18,15 @@ class ContactController extends Controller
         $request->session()->put('name', $name);
         $request->session()->put('email', $email);
         $request->session()->put('content', $content);
-        
+
         return view('confirm', compact('name', 'email', 'content'));
+    }
+
+    public function complete(Request $request) {
+        $name = $request->session()->get('name');
+        $email = $request->session()->get('email');
+        $content = $request->session()->get('content');
+
+        return view('complete', compact('name', 'email', 'content'));
     }
 }
