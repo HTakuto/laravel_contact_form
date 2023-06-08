@@ -7,7 +7,7 @@
     <title>入力画面</title>
 </head>
 <body>
-    <form action="{{url('/')}}" method="post">
+    <form action="{{url('/')}}">
         @csrf
         <p>以下内容でお問い合わせが完了しました。</p>
         名前<br>
