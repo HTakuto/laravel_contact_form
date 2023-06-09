@@ -22,3 +22,6 @@ Route::post('/complete', [ContactController::class, 'complete']);
 
 //管理者画面
 Route::get('/admin/index', [AdminController::class, 'index']);
+Route::post('/admin/register', [AdminController::class, 'register']);
+Route::get('/admin/login', [AdminController::class, 'login']);
+Route::post('/admin/list', [AdminController::class, 'list']);
