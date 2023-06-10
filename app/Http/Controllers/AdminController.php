@@ -37,7 +37,12 @@ class AdminController extends Controller
 
         return redirect()->route('admin/list');
     }
+
     public function list() {
         return view('admin/list');
+    }
+
+    public function login() {
+        return view('admin/login');
     }
 }
